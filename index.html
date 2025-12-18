@@ -108,28 +108,33 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
-  background: radial-gradient(circle at center, #5a3820 0%, #2f1c10 100%);
-  color: #fff2cc;
+  background: radial-gradient(circle at center, #50301c 0%, #28170d 100%);
+  color: #f2e4c4;
   font-family: 'VT323', monospace;
   font-size: 17px;
   line-height: 1.7;
   margin: 0;
   padding: 0;
-  text-shadow: 0 0 6px rgba(255, 240, 200, 0.6);
+
+  /* almost the same glow, just toned down */
+  text-shadow: 0 0 5px rgba(255, 235, 200, 0.45);
   animation: flicker 0.12s infinite;
 }
+
 
 #passages {
   max-width: 750px;
   margin: 4em auto;
   padding: 2.5em;
-  background: radial-gradient(circle at center, #a8733c 0%, #654021 100%);
-  border: 2px solid #ffecb3;
+  background: radial-gradient(circle at center, #8f5c2f 0%, #4a2d16 100%);
+  border: 2px solid #e2c58a;
   border-radius: 16px;
+
   box-shadow:
-    0 0 25px rgba(255, 235, 170, 0.35),
-    inset 0 0 18px rgba(0, 0, 0, 0.35),
-    inset 0 0 25px rgba(255, 220, 150, 0.1);
+    0 0 20px rgba(74, 52, 23, 0.25),
+    inset 0 0 20px rgba(0, 0, 0, 0.45),
+    inset 0 0 18px rgba(92, 57, 31, 0.07);
+
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -202,12 +207,17 @@ h1 {
 }
 
 h2 {
-  color: #ffd580;
-  font-size: 1.4em;
+  color: #ffe2a8;       
+  font-size: 1.5em;
   text-align: center;
-  text-shadow: 0 0 4px rgba(255,213,128,0.8), 0 0 4px rgba(166,216,255,0.5);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
+  line-height: 1.3;
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+
+
 
 h3 {
   color: #ff4d4d;
@@ -374,15 +384,16 @@ keyframes rainbowGradient {
 }
 
 .narration {
-  color: #fff2cc; 
+  color: #fff6d6;             
   font-family: 'VT323', monospace;
   font-size: 22px;
-  line-height: 1.2;
-  margin: 0.8em 0;
+  line-height: 1.4;
+  margin: 0.9em 0;
   padding: 0;
-  text-shadow: 0 0 6px rgba(255, 240, 200, 0.6);
-  letter-spacing: 0.3px;
-}
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+
+  letter-spacing: 0.2px; }
+
 
 .jake {
   background: radial-gradient(circle at center, #6aa5c1 0%, #35586a 100%);
@@ -886,28 +897,31 @@ keyframes rainbowGradient {
 
 .goal-list {
   font-family: 'VT323', monospace;
-  font-size: 22px;
-  line-height: 1.2;
-  letter-spacing: 0.3px;
-  margin: 0.8em 0;
+  font-size: 23px;    
+  line-height: 1.45;    
+  letter-spacing: 0.5px;
+  margin: 1em 0;
   padding: 0;
 }
 
 .goal {
-  text-shadow: 0 0 6px rgba(255, 240, 200, 0.6);
   margin: 6px 0;
+
+  text-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.7),
+    0 0 3px rgba(255, 255, 255, 0.25);
 }
 
-.goal1 { color: #ff4d4d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; font-size: 22px; } 
-.goal2 { color: #ff794d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }
-.goal3 { color: #ffb84d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }
-.goal4 { color: #ffd24d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; } 
-.goal5 { color: #e6ff4d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }  
-.goal6 { color: #b3ff4d; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }  
-.goal7 { color: #4dff88; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }   
-.goal8 { color: #4dffd2; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }   
-.goal9 { color: #4dd2ff; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; }  
-.goal10 { color: #4d88ff; text-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor; } 
+.goal1  { color: #ff5c5c; }
+.goal2  { color: #ff865c; }
+.goal3  { color: #ffb85c; }
+.goal4  { color: #ffdb5c; }
+.goal5  { color: #ecff5c; }
+.goal6  { color: #bfff5c; }
+.goal7  { color: #5cff99; }
+.goal8  { color: #5cffdb; }
+.goal9  { color: #5cd6ff; }
+.goal10 { color: #5c8cff; }
 
 
 .goal11 { 
@@ -2253,7 +2267,7 @@ Will Jake actually complete his Gay Agenda? Or will he totally flop and end up l
 </tw-passagedata><tw-passagedata pid="2" name="Disclaimer" tags="" position="600,325" size="100,100">&lt;h1 align=&quot;center&quot;&gt;DISCLAIMER&lt;/h1&gt;&lt;h3 align=&quot;center&quot;&gt;Warning!&lt;/h3&gt;&lt;h2&gt;To play this game you must be above 21 years old. This game features explicit/nsfw content and adult topics like sex, pornography, adultery, substance abuse, fetishes, etc. 
 All characters in this game are 18+ and fictional; nothing that appears in this game is real or related to any real person. All coincidence with reality is random.
 
-This game is inspired by the book &quot;Jay&#39;s Gay Agenda&quot; and by popular gay text-based games like &quot;The Family Curse&quot;, &quot;Young Marcus&quot;, &quot; Reforming School&quot;, &quot;The Fairy Prince&quot; and &quot;State of Exposure&quot;.&lt;/h2&gt;
+This game is inspired by the book &quot;Jay&#39;s Gay Agenda&quot; and by popular gay text-based games like &quot;The Family Curse&quot;, &quot;Young Marcus&quot;, &quot;Reform School&quot;, &quot;The Fairy Prince&quot; and &quot;State of Exposure&quot;.&lt;/h2&gt;
  &lt;h2 align=&quot;center&quot;&gt;Are you 21+ and have you read the disclaimer section?&lt;/h2&gt;
 &lt;div align=&quot;center&quot;&gt;&lt;&lt;link &quot;Yes&quot;&gt;&gt;
     &lt;&lt;goto &quot;StartScreen&quot;&gt;&gt;
@@ -2520,6 +2534,7 @@ Then you see it — Jakey, your stuffed dog you’ve had since you were a baby.&
 &lt;&lt;set $maxBJ = false&gt;&gt;
 &lt;&lt;set $maxHU = false&gt;&gt;
 
+&lt;&lt;set $colorBlindMode to false&gt;&gt;
 </tw-passagedata><tw-passagedata pid="17" name="Phone" tags="" position="1200,200" size="100,100">&lt;div id=&quot;phone-container&quot;&gt;&lt;img id=&quot;phone-image&quot; src=&quot;images/phone/phone.png&quot;&gt;&lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;
 
   &lt;img class=&quot;app-icon&quot;
@@ -2800,7 +2815,7 @@ There’s an electronics store, a grocery shop, a fast food place, and a gift sh
   &lt;&lt;link &quot;🍽 Eat Dinner&quot;&gt;&gt;
     &lt;&lt;goto &quot;🍽&quot;&gt;&gt;
   &lt;&lt;/link&gt;&gt;
-&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Sleep" tags="" position="1600,1250" size="100,100">&lt;&lt;if $hasJakey is true&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You put your pijamas and go to bed. As you hug Jakey you fall into the most peaceful sleep.&lt;/div&gt;&lt;&lt;set $hour += 8&gt;&gt;&lt;&lt;else&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You put your pijamas and go to bed.&lt;/div&gt;&lt;&lt;set $hour += 9&gt;&gt;&lt;&lt;statCheck&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;run updateStats(&quot;energy&quot;, +100)&gt;&gt;&lt;&lt;run updateStats(&quot;hunger&quot;, +10)&gt;&gt;&lt;&lt;if $lust &gt;= 100&gt;&gt;&lt;&lt;goto &quot;LustSleep&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;link &quot;Wake up&quot;&gt;&gt;&lt;&lt;goto &quot;Dorm&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Zack1" tags="" position="500,1800" size="100,100">&lt;&lt;if $hour &gt;= 22&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Sleep" tags="" position="1600,1250" size="100,100">&lt;&lt;if $hasJakey is true&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You put your pijamas and go to bed. As you hug Jakey you fall into the most peaceful sleep.&lt;/div&gt;&lt;&lt;set $hour += 8&gt;&gt;&lt;&lt;else&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You put your pijamas and go to bed.&lt;/div&gt;&lt;&lt;set $hour += 9&gt;&gt;&lt;&lt;statCheck&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;run updateStats(&quot;energy&quot;, +100)&gt;&gt;&lt;&lt;run updateStats(&quot;hunger&quot;, +10)&gt;&gt;&lt;&lt;if $lust &gt;= 100&gt;&gt;&lt;&lt;goto &quot;LustSleep&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;link &quot;Wake up&quot;&gt;&gt;&lt;&lt;goto &quot;Dorm&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;        &lt;&lt;set $chiwisShiftDone = false&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Zack1" tags="" position="500,1800" size="100,100">&lt;&lt;if $hour &gt;= 22&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;img src=&quot;images/Zack/Zack1.jpg&quot; class=&quot;char-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;ZACK&lt;div style=&quot;float:right; font-size:18px;&quot;&gt;- &lt;&lt;link &quot;Back&quot;&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/link&gt;&gt; -&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;&lt;&lt;if $zackLust &gt;= 75 and $zackAffection &gt;= 75&gt;&gt;
     &lt;&lt;link &quot;🗪 Talk&quot;&gt;&gt;&lt;&lt;goto &quot;Zack4&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;elseif $zackLust &gt;= 50 and $zackAffection &gt;= 50&gt;&gt;
@@ -3222,16 +3237,18 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
 &lt;&lt;goto &quot;EatChiwis&#39;&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;&lt;&lt;if !$chiwisjob&gt;&gt;
 &lt;&lt;link &quot;🗏 Job Flyer&quot;&gt;&gt;
-        &lt;&lt;goto &quot;Chiwis&#39; Flyer&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $chiwisjob
+        &lt;&lt;goto &quot;Chiwis&#39; Flyer&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _time = $hour * 60 + $minute&gt;&gt;
+
+&lt;&lt;if $chiwisjob
     and not $chiwisShiftDone
     and (
         $currentWeekDay == &quot;Saturday&quot;
         or $currentWeekDay == &quot;Sunday&quot;
     )
     and (
-        ($hour == 14 and $minute &lt;= 60)
+        (_time &gt;= 810 and _time &lt;= 900)
         or
-        ($hour == 19 and $minute &lt;= 60)
+        (_time &gt;= 1110 and _time &lt;= 1200)
     )
 &gt;&gt;
     &lt;&lt;link &quot;⛃ Work shift&quot;&gt;&gt;
@@ -3239,6 +3256,7 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
         &lt;&lt;goto &quot;Chiwis&#39; shift&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+
         &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;items-grid&quot;&gt;&lt;div class=&quot;item-card&quot;&gt;&lt;img src=&quot;images/food/burger.png&quot; class=&quot;item-icon&quot;&gt;&lt;div class=&quot;item-name&quot;&gt;Chiwis&#39; Special Burger&lt;/div&gt;&lt;div class=&quot;item-amount&quot;&gt;$10&lt;/div&gt; &lt;div class=&quot;item-action&quot;&gt; &lt;&lt;link &quot;Buy&quot; &gt;&gt;&lt;&lt;if $money &gt;= 10&gt;&gt;&lt;&lt;set $money -= 10&gt;&gt;&lt;&lt;set $burgerQty += 1&gt;&gt;&lt;&lt;set $hasBurger = true&gt;&gt;&lt;&lt;else&gt;&gt;Not enough money!&lt;&lt;/if&gt;&gt;&lt;&lt;goto &quot;Chiwis&#39;&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;item-card&quot;&gt;&lt;img src=&quot;images/food/pastor.png&quot; class=&quot;item-icon&quot;&gt;&lt;div class=&quot;item-name&quot;&gt;Chiwis&#39; Tacos Al Pastor&lt;/div&gt;&lt;div class=&quot;item-amount&quot;&gt;$10&lt;/div&gt; &lt;div class=&quot;item-action&quot;&gt; &lt;&lt;link &quot;Buy&quot; &gt;&gt;&lt;&lt;if $money &gt;= 10&gt;&gt;&lt;&lt;set $money -= 10&gt;&gt;&lt;&lt;set $pastorQty += 3&gt;&gt;&lt;&lt;set $hasPastor = true&gt;&gt;&lt;&lt;else&gt;&gt;Not enough money!&lt;&lt;/if&gt;&gt;&lt;&lt;goto &quot;Chiwis&#39;&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="PhotoGallery" tags="" position="2450,150" size="100,100">&lt;div id=&quot;phone-container&quot;&gt;&lt;img id=&quot;phone-image&quot; src=&quot;images/phone/gallerybg.png&quot;&gt;&lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;&lt;img src=&quot;images/phone/emptyslots.png&quot;
          style=&quot;
              position:absolute;
@@ -3269,7 +3287,7 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
          z-index:3;
        &quot;
        onclick=&quot;SugarCube.Engine.play(&#39;JakeScenes&#39;);&quot;&gt;
-        &lt;img class=&quot;scenes-icon&quot;
+        &lt;&lt;if $zack&gt;&gt;&lt;img class=&quot;scenes-icon&quot;
        src=&quot;images/Zack/zacks1.jpg&quot;
        style=&quot;
          position:absolute;
@@ -3277,8 +3295,8 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
          left:232px;
          z-index:3;
        &quot;
-       onclick=&quot;SugarCube.Engine.play(&#39;ZackScenes&#39;);&quot;&gt;
-&lt;img class=&quot;scenes-icon&quot;
+       onclick=&quot;SugarCube.Engine.play(&#39;ZackScenes&#39;);&quot;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $max&gt;&gt;&lt;img class=&quot;scenes-icon&quot;
        src=&quot;images/Max/maxs1.jpg&quot;
        style=&quot;
          position:absolute;
@@ -3286,7 +3304,7 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
          left:320px;
          z-index:3;
        &quot;
-       onclick=&quot;SugarCube.Engine.play(&#39;MaxScenes&#39;);&quot;&gt;
+       onclick=&quot;SugarCube.Engine.play(&#39;MaxScenes&#39;);&quot;&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;&lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="74" name="Skills" tags="" position="1400,325" size="100,100">&lt;div id=&quot;phone-container&quot; style=&quot;position:relative; z-index:1;&quot;&gt;
     &lt;img id=&quot;phone-image&quot; src=&quot;images/phone/skillsbg.png&quot;&gt;&lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;
@@ -3653,9 +3671,8 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
 
 
 
-</tw-passagedata><tw-passagedata pid="80" name="LustSleepEvent" tags="" position="1850,1250" size="100,100">&lt;&lt;set _rng = random(1,2)&gt;&gt;
-&lt;&lt;switch _rng&gt;&gt;
-&lt;&lt;case 1&gt;&gt;&lt;div class=&quot;narration&quot;&gt;Suddenly you wake up in a different room. You feel weird for a second, but it fades when you see Zack on the couch, touching himself. His dick looks huge, and he’s moving slowly, looking insanely hot.&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.1.gif&quot; 
+</tw-passagedata><tw-passagedata pid="80" name="LustSleepEvent" tags="" position="1850,1250" size="100,100">&lt;&lt;set _dreams = []&gt;&gt;&lt;&lt;if $zack&gt;&gt;&lt;&lt;set _dreams.push(&quot;zack&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $max&gt;&gt;&lt;&lt;set _dreams.push(&quot;max&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _choice = _dreams.random()&gt;&gt;&lt;&lt;switch _choice&gt;&gt;&lt;&lt;case &quot;zack&quot;&gt;&gt;
+&lt;div class=&quot;narration&quot;&gt;Suddenly you wake up in a different room. You feel weird for a second, but it fades when you see Zack on the couch, touching himself. His dick looks huge, and he’s moving slowly, looking insanely hot.&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.1.gif&quot; 
      alt=&quot;zack&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;
 &lt;div class=&quot;narration&quot;&gt;You get hard right away and can’t control yourself — you start touching yourself too.&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.2.gif&quot; 
@@ -3664,7 +3681,9 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
 &lt;div class=&quot;narration&quot;&gt;Zack looks close, and then he comes, his moans filling the room as you watch the thick cum spill from him. The sight pushes you over the edge, and you feel a warm, intense release as you finish too.&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.3.gif&quot; 
      alt=&quot;zack&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;&lt;&lt;set $zackDream = true&gt;&gt;
-			&lt;&lt;case 2&gt;&gt; &lt;div class=&quot;narration&quot;&gt;Suddenly you wake up in a different room. You feel weird for a second, but it fades when you see Max on a couch, touching himself. His dick looks huge, and he’s moving slowly, looking insanely hot.&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.1.gif&quot; 
+&lt;&lt;case &quot;max&quot;&gt;&gt;
+  &lt;!-- Max dream --&gt;
+ &lt;div class=&quot;narration&quot;&gt;Suddenly you wake up in a different room. You feel weird for a second, but it fades when you see Max on a couch, touching himself. His dick looks huge, and he’s moving slowly, looking insanely hot.&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.1.gif&quot; 
      alt=&quot;max&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;
 &lt;div class=&quot;narration&quot;&gt;You get hard right away and can’t control yourself — you start touching yourself too.&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.2.gif&quot; 
@@ -3672,12 +3691,13 @@ The minutes go by, calm and quiet before you finally rise from your seat, feelin
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;
 &lt;div class=&quot;narration&quot;&gt;Max gets close and then he comes, his moans filling the room as you watch all that cum spill from him. The sight pushes you over the edge, and you feel a warm, intense release as you finish too.&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.3.gif&quot; 
      alt=&quot;max&quot;
-     style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;&lt;&lt;set $maxDream = true&gt;&gt;&lt;&lt;/switch&gt;&gt;&lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;link &quot;Cum&quot;&gt;&gt;&lt;&lt;goto &quot;Wakeupwet&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
+     style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;
+  &lt;&lt;set $maxDream = true&gt;&gt;&lt;&lt;/switch&gt;&gt;&lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;link &quot;Cum&quot;&gt;&gt;&lt;&lt;goto &quot;Wakeupwet&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
 		</tw-passagedata><tw-passagedata pid="81" name="Wakeupwet" tags="" position="1975,1250" size="100,100"> &lt;img src=&quot;images/jake/dream1.gif&quot; 
      alt=&quot;mirror&quot;
      style=&quot;display:block; margin:auto; max-width:70%; height:auto; border-radius:10px;&quot;&gt;&lt;div class=&quot;narration&quot;&gt;You feel a sudden rush spread through your whole body—so strong it pulls you out of the dream. You gasp awake in your own bed, heart racing, skin warm. It takes you a second to realize what happened… and then you notice your underwear is damp.
 Your face heats up instantly.
-Great. A wet dream.&lt;/div&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;run updateStats(&quot;energy&quot;, +100)&gt;&gt;&lt;&lt;run updateStats(&quot;hunger&quot;, -50)&gt;&gt;&lt;&lt;run updateStats(&quot;lust&quot;, -25)&gt;&gt; &lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;link &quot;Get up&quot;&gt;&gt;&lt;&lt;goto &quot;Dorm&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="🍽" tags="" position="2250,1200" size="100,100">&lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;&lt;if $hour &gt;= 19 or $hour &lt; 6&gt;&gt;&lt;img src=&quot;images/campus/cafeteria2.jpg&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;CAFETERIA&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;img src=&quot;images/campus/cafeteria.jpg&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;CAFETERIA&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;&lt;&lt;link &quot;⍈ Common room&quot;&gt;&gt;
+Great. A wet dream.&lt;/div&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt; &lt;div style=&quot;text-align:center; margin-top:10px;&quot;&gt;&lt;&lt;link &quot;Get up&quot;&gt;&gt;&lt;&lt;run updateStats(&quot;energy&quot;, +100)&gt;&gt;&lt;&lt;run updateStats(&quot;hunger&quot;, -50)&gt;&gt;&lt;&lt;run updateStats(&quot;lust&quot;, -25)&gt;&gt;&lt;&lt;goto &quot;Dorm&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="🍽" tags="" position="2250,1200" size="100,100">&lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;&lt;if $hour &gt;= 19 or $hour &lt; 6&gt;&gt;&lt;img src=&quot;images/campus/cafeteria2.jpg&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;CAFETERIA&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;img src=&quot;images/campus/cafeteria.jpg&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;CAFETERIA&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;&lt;&lt;link &quot;⍈ Common room&quot;&gt;&gt;
     &lt;&lt;set $minute += 5&gt;&gt;
     &lt;&lt;goto &quot;Common room&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
@@ -4791,7 +4811,7 @@ Discussion picks up, and you answer one of the questions.&lt;/div&gt;&lt;div cla
     &lt;/div&gt;</tw-passagedata><tw-passagedata pid="135" name="NurseOffice" tags="" position="1800,700" size="100,100">&lt;&lt;if $energy &lt;= 0&gt;&gt;&lt;div class=&quot;narration&quot;&gt;
 Your eyes open slowly, your body feeling impossibly heavy.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;Every muscle aches as if you ran on empty for far too long.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: Hey. Don’t rush it.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;
 A tall nurse steps into view, broad shoulders stretching his scrubs as he checks the monitor beside your bed.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;You collapsed from exhaustion. No injuries — just completely drained.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;He gently adjusts your pillow, his hand steady and warm.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: Rest for a bit. I’ll make sure you don’t overdo it again.&lt;/div&gt;&lt;&lt;set $energy = 50&gt;&gt;
-&lt;&lt;set $hunger += 30&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $hunger &lt;= 0&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You wake up to the quiet clink of a tray being set down.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;The smell of food makes your stomach twist immediately.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: There you are.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;The nurse sits beside your bed, watching you with clear concern.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: You didn’t eat. At all.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;He slides the tray closer, not taking no for an answer.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: Slowly. And don’t skip meals like that again.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;He stays nearby as you eat, arms crossed, making sure you finish.&lt;/div&gt;&lt;&lt;set $hunger = 60&gt;&gt;&lt;&lt;set $energy = 50&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $hour += 4&gt;&gt;&lt;&lt;set $passedOut = false&gt;&gt;&lt;&lt;set $money -= 25&gt;&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="136" name="Goal1" tags="" position="1150,2350" size="100,100">&lt;&lt;set $goals.hookUp = true&gt;&gt;&lt;h1 align=&quot;center&quot;&gt;&lt;span class=&quot;rainbow&quot;&gt;THANKS FOR PLAYING!!!&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;narration&quot;&gt;Congrats!! You’ve completed the first goal. I hope you had a great time.
+&lt;&lt;set $hunger += 30&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $hunger &lt;= 0&gt;&gt;&lt;div class=&quot;narration&quot;&gt;You wake up to the quiet clink of a tray being set down.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;The smell of food makes your stomach twist immediately.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: There you are.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;The nurse sits beside your bed, watching you with clear concern.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: You didn’t eat. At all.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;He slides the tray closer, not taking no for an answer.&lt;/div&gt;&lt;div class=&quot;nurse&quot;&gt;Nurse: Slowly. And don’t skip meals like that again.&lt;/div&gt;&lt;div class=&quot;narration&quot;&gt;He stays nearby as you eat, arms crossed, making sure you finish.&lt;/div&gt;&lt;&lt;set $hunger = 60&gt;&gt;&lt;&lt;set $energy = 50&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $hour += 4&gt;&gt;&lt;&lt;set $passedOut = false&gt;&gt;&lt;&lt;set $money -= 50&gt;&gt;&lt;&lt;if $minute &gt;= 60&gt;&gt;&lt;&lt;set $hour += Math.floor($minute / 60)&gt;&gt;&lt;&lt;set $minute = $minute % 60&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 24&gt;&gt;&lt;&lt;set $hour = $hour % 24&gt;&gt;&lt;&lt;set $dayCount += 1&gt;&gt;&lt;&lt;set $currentWeekDay = $weekDays[$dayCount % 7]&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="136" name="Goal1" tags="" position="1150,2350" size="100,100">&lt;&lt;set $goals.hookUp = true&gt;&gt;&lt;h1 align=&quot;center&quot;&gt;&lt;span class=&quot;rainbow&quot;&gt;THANKS FOR PLAYING!!!&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;narration&quot;&gt;Congrats!! You’ve completed the first goal. I hope you had a great time.
 
 This is the first game I’ve ever made, and I have a lot of things planned for the future, more goals, new scenes, secondary objectives, additional characters, and more.
 
