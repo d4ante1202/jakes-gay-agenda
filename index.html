@@ -3814,7 +3814,7 @@ After a while, your eyes feel a little tired, but you’ve made good progress. Y
         &lt;&lt;link &quot;ঌ Tease&quot;&gt;&gt;&lt;&lt;goto &quot;Tease Zack&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
                      &lt;&lt;link &quot;ཐིཋྀ Give a present&quot;&gt;&gt;
             &lt;&lt;goto &quot;Present Zack&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;if $zackLust &gt;= 25 and $zackAffection &gt;= 25&gt;&gt;
-    &lt;&lt;link &quot;‪‪♡‬ Kiss him&quot;&gt;&gt;&lt;&lt;goto &quot;Kiss Zack&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;link &quot;Cheat&quot;&gt;&gt;&lt;&lt;goto &quot;CheatZ&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+    &lt;&lt;link &quot;‪‪♡‬ Kiss him&quot;&gt;&gt;&lt;&lt;goto &quot;Kiss Zack&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
     &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="90" name="Max" tags="" position="700,1700" size="100,100">&lt;&lt;if $hour &gt;= 19&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;img src=&quot;images/Max/Max1.jpg&quot; class=&quot;char-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;MAX&lt;div style=&quot;float:right; font-size:18px;&quot;&gt;- &lt;&lt;link &quot;Back&quot;&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/link&gt;&gt; -&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;&lt;&lt;if $maxLust &gt;= 75 and $maxAffection &gt;= 75&gt;&gt;
     &lt;&lt;link &quot;🗪 Talk&quot;&gt;&gt;&lt;&lt;goto &quot;Max4&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -3834,7 +3834,7 @@ After a while, your eyes feel a little tired, but you’ve made good progress. Y
                      &lt;&lt;link &quot;ཐིཋྀ Give a present&quot;&gt;&gt;
             &lt;&lt;goto &quot;Present Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;if $maxLust &gt;= 25 and $maxAffection &gt;= 25&gt;&gt;
-    &lt;&lt;link &quot;‪‪♡‬ Kiss him&quot;&gt;&gt;&lt;&lt;goto &quot;Kiss Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;link &quot;ঌ CheatM&quot;&gt;&gt;&lt;&lt;goto &quot;CheatM&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+    &lt;&lt;link &quot;‪‪♡‬ Kiss him&quot;&gt;&gt;&lt;&lt;goto &quot;Kiss Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
     &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="91" name="Kiss Zack" tags="" position="500,2100" size="100,100">&lt;&lt;if $zackFK&gt;&gt;&lt;&lt;goto &quot;First Kiss Zack&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hour &gt;= 22&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;img src=&quot;images/Zack/Zack1.jpg&quot; class=&quot;char-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;ZACK&lt;div style=&quot;float:right; font-size:18px;&quot;&gt;- &lt;&lt;link &quot;Back&quot;&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/link&gt;&gt; -&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;&lt;&lt;if $zackLust &gt;= 75 and $zackAffection &gt;= 75&gt;&gt;
@@ -4807,12 +4807,7 @@ If you’d like to support the game, give feedback, share ideas, get early acces
 &lt;/a&gt;&lt;/div&gt;&lt;img src=&quot;images/ui/hoeheart.png&quot; 
      alt=&quot;jgg&quot;
      style=&quot;display:block; margin:auto; max-width:30%; height:auto; border-radius:10px;&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;&lt;link &quot;Keep Playing&quot;&gt;&gt;&lt;&lt;goto $previousPassage&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="137" name="CheatM" tags="" position="1200,1700" size="100,100">&lt;&lt;set $maxAffection += 20&gt;&gt;&lt;span style=&quot;color:#c48099;&quot;&gt;+20&lt;/span&gt; Affection
-&lt;&lt;set $maxLust += 20 &gt;&gt;&lt;span style=&quot;color:#8f6fad;&quot;&gt;+20&lt;/span&gt; Lust
-
-&lt;&lt;link &quot;Max&quot;&gt;&gt;&lt;&lt;goto &quot;Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="138" name="CheatZ" tags="" position="1325,1700" size="100,100">&lt;&lt;set $zackAffection += 20&gt;&gt;&lt;span style=&quot;color:#c48099;&quot;&gt;+20&lt;/span&gt; Affection
-&lt;&lt;set $zackLust += 20 &gt;&gt;&lt;span style=&quot;color:#8f6fad;&quot;&gt;+20&lt;/span&gt; Lust
-&lt;&lt;link &quot;Zack&quot;&gt;&gt;&lt;&lt;goto &quot;Zack&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="139" name="JakeScenes" tags="" position="2600,275" size="100,100">&lt;&lt;if $jakeJO&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Jerk Off&lt;/div&gt;&lt;img src=&quot;images/jake/jo1.gif&quot; 
+</tw-passagedata><tw-passagedata pid="137" name="JakeScenes" tags="" position="2600,275" size="100,100">&lt;&lt;if $jakeJO&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Jerk Off&lt;/div&gt;&lt;img src=&quot;images/jake/jo1.gif&quot; 
      alt=&quot;jake&quot;
      style=&quot;display:block; margin:auto; max-width:60%; height:auto; border-radius:10px;&quot;&gt;
      &lt;img src=&quot;images/jake/jo2.gif&quot; 
@@ -4821,7 +4816,7 @@ If you’d like to support the game, give feedback, share ideas, get early acces
      &lt;img src=&quot;images/jake/jo3.gif&quot; 
      alt=&quot;jake&quot;
      style=&quot;display:block; margin:auto; max-width:60%; height:auto; border-radius:10px;&quot;&gt;&lt;&lt;/if&gt;&gt;
-     &lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="140" name="ZackScenes" tags="" position="2725,275" size="100,100">&lt;&lt;if $zackDream&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Wet Dream&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.1.gif&quot; 
+     &lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="138" name="ZackScenes" tags="" position="2725,275" size="100,100">&lt;&lt;if $zackDream&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Wet Dream&lt;/div&gt;&lt;img src=&quot;images/Zack/dream1.1.gif&quot; 
      alt=&quot;zack&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;
 &lt;img src=&quot;images/Zack/dream1.2.gif&quot; 
@@ -4860,7 +4855,7 @@ If you’d like to support the game, give feedback, share ideas, get early acces
 &lt;img src=&quot;images/Zack/zackhu5.gif&quot; 
      alt=&quot;zack&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;&lt;&lt;/if&gt;&gt;
-&lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="141" name="MaxScenes" tags="" position="2850,275" size="100,100">&lt;&lt;if $maxDream&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Wet Dream&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.1.gif&quot; 
+&lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="139" name="MaxScenes" tags="" position="2850,275" size="100,100">&lt;&lt;if $maxDream&gt;&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;narration&quot;&gt;Wet Dream&lt;/div&gt;&lt;img src=&quot;images/Max/dream1.1.gif&quot; 
      alt=&quot;max&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;
 &lt;img src=&quot;images/Max/dream1.2.gif&quot; 
@@ -4899,7 +4894,7 @@ If you’d like to support the game, give feedback, share ideas, get early acces
 &lt;img src=&quot;images/Max/maxhu5.gif&quot; 
      alt=&quot;max&quot;
      style=&quot;display:block; margin:auto; width:70%;; height:auto; border-radius:10px;&quot;&gt;&lt;&lt;/if&gt;&gt;
-     &lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="142" name="Library homework" tags="" position="2900,1500" size="100,100">&lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;img src=&quot;images/campus/library.jpg&quot; alt=&quot;library&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;LIBRARY&lt;div style=&quot;float:right; font-size:18px;&quot;&gt;&lt;&lt;if $hour &gt;= 15 and $hour &lt;= 18&gt;&gt;- &lt;&lt;link &quot;Max&quot;&gt;&gt;&lt;&lt;set $previousPassage = &quot;Library&quot;&gt;&gt;&lt;&lt;goto &quot;Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; is reading on a table  -&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;
+     &lt;div style=&quot;text-align:center; margin-top:10px; position:relative; z-index:4;&quot;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="140" name="Library homework" tags="" position="2900,1500" size="100,100">&lt;div class=&quot;game-screen&quot;&gt;&lt;div class=&quot;screen-left&quot;&gt;&lt;img src=&quot;images/campus/library.jpg&quot; alt=&quot;library&quot; class=&quot;room-img&quot;&gt;&lt;div class=&quot;narration&quot;&gt;LIBRARY&lt;div style=&quot;float:right; font-size:18px;&quot;&gt;&lt;&lt;if $hour &gt;= 15 and $hour &lt;= 18&gt;&gt;- &lt;&lt;link &quot;Max&quot;&gt;&gt;&lt;&lt;set $previousPassage = &quot;Library&quot;&gt;&gt;&lt;&lt;goto &quot;Max&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; is reading on a table  -&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;screen-right&quot;&gt;
         &lt;&lt;link &quot;♨ Eat&quot;&gt;&gt;&lt;&lt;set $minute += 5&gt;&gt;
             &lt;&lt;goto &quot;EatLibrary&quot;&gt;&gt;
             &lt;&lt;/link&gt;&gt;
